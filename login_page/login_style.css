@@ -1,0 +1,80 @@
+:root {
+  /* font size */
+  --login-font-size: 6rem;
+  --login-margin: 1rem;
+  /* font family */
+  --desc-font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+#login__container {
+  height: 100%;
+  background-image: url(./img/landing_plant_img.png);
+  background-repeat: no-repeat; /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다. */
+  background-size: cover; /* 사이즈가 container에 맞지 않아도 꽉 차도록 채운다. */
+  background-position: center; /* background-image가 컨테이너에 가운데로 오도록 한다. */
+  /* 여기까지 배경 화면에 이미지를 넣고 브라우저에 맞게 채운 후 반응형으로 만드는 부분이다. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login__container > #login {
+  width: 90%;
+  height: 80%;
+  backdrop-filter: blur(10px);
+}
+#login__container > #login > #login__title {
+  margin: 0;
+  font-size: var(--login-font-size);
+  font-family: var(--desc-font-family);
+}
+#login__container > #login > .input__email__password {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#login__container > #login > .input__email__password > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  margin-right: 0;
+}
+#login__container > #login > .input__email__password > div > span {
+  font-size: 1.5rem;
+  color: #848380;
+}
+#login__container > #login > .input__email__password > div > input {
+  font-size: 2rem;
+  width: 50%;
+  margin: 1rem 0;
+  border: 0;
+  border-bottom: 2px solid #dadcd9;
+  background-color: #0000;
+}
+#login__container
+  > #login
+  > .input__email__password
+  > div
+  > input::placeholder {
+  color: #e4e6e2;
+}
+#login__container > #login > .list__btn {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  width: 20%;
+  margin: 0;
+}
+#login__container > #login > .list__btn > li > .btn__login,
+#login__container > #login > .list__btn > li > .btn__signup {
+  border: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #848380;
+}
