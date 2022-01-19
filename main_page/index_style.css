@@ -1,0 +1,66 @@
+:root {
+  /* font size */
+  --main-font-size: 8rem;
+  --main-margin: 1rem;
+  /* font family */
+  --desc-font-family: 'Roboto Mono', monospace;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#landing__container {
+  background-image: url(./img/landing_plant_img.png);
+  background-repeat: no-repeat; /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다. */
+  background-size: cover; /* 사이즈가 container에 맞지 않아도 꽉 차도록 채운다. */
+  background-position: center; /* background-image가 컨테이너에 가운데로 오도록 한다. */
+  /* 여기까지 배경 화면에 이미지를 넣고 브라우저에 맞게 채운 후 반응형으로 만드는 부분이다. */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#landing__container > .main__title {
+  margin: var(--main-margin);
+  font-family: 'Roboto', sans-serif;
+}
+#landing__container > .main__title > .landing__title {
+  margin: 0;
+  font-size: var(--main-font-size);
+}
+#landing__container > .main__body > .desc__btn {
+  margin-left: 15rem;
+  margin-bottom: 7rem;
+}
+#landing__container > .main__body > .desc__btn > .desc__bigger {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: var(--desc-font-family);
+}
+#landing__container > .main__body > .desc__btn > .list__btn {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+#landing__container > .main__body > .desc__btn > .list__btn > li > .btn__login,
+#landing__container
+  > .main__body
+  > .desc__btn
+  > .list__btn
+  > li
+  > .btn__signup {
+  border: 0;
+  cursor: pointer;
+  margin: 1rem;
+  margin-left: 0;
+  font-size: 1rem;
+  color: #838480;
+}
