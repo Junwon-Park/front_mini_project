@@ -37,11 +37,18 @@ body {
   padding: 0;
   margin: 1rem;
 }
-#todo__container > .todo__list > li {
+#todo__container > .todo__list > .todo__item {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #dadcd9;
   padding: 1rem;
+}
+#todo__container > .todo__list > .todo__item > .delete {
+  cursor: pointer;
+}
+#todo__container > .todo__list > .todo__item > .delete:hover {
+  background-color: red;
+  border-radius: 4px;
 }
 
 #todo__container > .input__box {
@@ -62,4 +69,5 @@ body {
   padding: 0;
   margin-left: 1rem;
   cursor: pointer;
+  background-color: #0000;
 }

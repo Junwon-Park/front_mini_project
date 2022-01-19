@@ -22,14 +22,33 @@
     <main id="todo__container">
       <h1 id="title__box">ToDo</h1>
       <ul class="todo__list">
-        <li>
+        <li class="todo__item">
           <input type="checkbox" />
-          <div class="text__todo">HTML 공부하기</div>
+          <div class="text__todo">0</div>
+          <button class="delete"><i class="fas fa-trash-alt"></i></button>
+        </li>
+        <li class="todo__item">
+          <input type="checkbox" />
+          <div class="text__todo">1</div>
+          <button class="delete"><i class="fas fa-trash-alt"></i></button>
+        </li>
+        <li class="todo__item">
+          <input type="checkbox" />
+          <div class="text__todo">2</div>
+          <button class="delete"><i class="fas fa-trash-alt"></i></button>
+        </li>
+        <li class="todo__item">
+          <input type="checkbox" />
+          <div class="text__todo">3</div>
           <button class="delete"><i class="fas fa-trash-alt"></i></button>
         </li>
       </ul>
       <section class="input__box">
-        <input type="text" class="input__todo" /><button class="add__btn">
+        <input
+          type="text"
+          class="input__todo"
+          placeholder="할 일을 입력하세요."
+        /><button class="add__btn">
           <i class="fas fa-plus"></i>
         </button>
       </section>

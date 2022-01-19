@@ -51,16 +51,13 @@ body {
   padding: 0;
 }
 #landing__container > .main__body > .desc__btn > .list__btn > li > .btn__login,
-#landing__container
-  > .main__body
-  > .desc__btn
-  > .list__btn
-  > li
-  > .btn__signup {
+#landing__container > .main__body > .desc__btn > .list__btn > li > .btn__signup,
+#landing__container > .main__body > .desc__btn > .list__btn > li > .btn__todo {
   border: 0;
   cursor: pointer;
   margin: 1rem;
   margin-left: 0;
   font-size: 1rem;
   color: #838480;
+  background-color: #0000;
 }
