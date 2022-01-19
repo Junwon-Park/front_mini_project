@@ -3,7 +3,11 @@
   --login-font-size: 6rem;
   --login-margin: 1rem;
   /* font family */
-  --desc-font-family: 'Roboto Mono', monospace;
+  --main-font-family: 'Roboto Mono', monospace;
+}
+
+* {
+  font-family: var(--main-font-family);
 }
 
 body {
@@ -30,7 +34,6 @@ body {
 #login__container > #login > #login__title {
   margin: 0;
   font-size: var(--login-font-size);
-  font-family: var(--desc-font-family);
 }
 #login__container > #login > .input__email__password {
   height: 30rem;
