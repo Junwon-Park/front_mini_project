@@ -6,6 +6,10 @@
   --main-font-family: 'Roboto Mono', monospace;
 }
 
+* {
+  font-family: var(--main-font-family);
+}
+
 body {
   background-color: #e5e5e5;
   display: flex;

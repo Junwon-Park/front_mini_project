@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./todo_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5db9a19ce8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./todo.js"></script>
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <main id="todo__container">
+      <h1 id="title__box">ToDo</h1>
+      <ul class="todo__list">
+        <li>
+          <input type="checkbox" />
+          <div class="text__todo">HTML 공부하기</div>
+          <button class="delete"><i class="fas fa-trash-alt"></i></button>
+        </li>
+      </ul>
+      <section class="input__box">
+        <input type="text" class="input__todo" /><button class="add__btn">
+          <i class="fas fa-plus"></i>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

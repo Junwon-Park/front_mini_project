@@ -1,0 +1,65 @@
+:root {
+  /* font size */
+  --login-font-size: 6rem;
+  --login-margin: 1rem;
+  /* font family */
+  --main-font-family: 'Roboto Mono', monospace;
+}
+
+* {
+  font-family: var(--main-font-family);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(202, 108, 202);
+}
+#todo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 80%;
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+#todo__container > #title__box {
+  font-size: var(--login-font-size);
+  margin: 0;
+  text-align: center;
+}
+#todo__container > .todo__list {
+  height: 100%;
+  padding: 0;
+  margin: 1rem;
+}
+#todo__container > .todo__list > li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dadcd9;
+  padding: 1rem;
+}
+
+#todo__container > .input__box {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+#todo__container > .input__box > .input__todo {
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid #dadcd9;
+  background-color: #0000;
+}
+#todo__container > .input__box > button {
+  border: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0;
+  margin-left: 1rem;
+  cursor: pointer;
+}
